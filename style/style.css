@@ -1,0 +1,157 @@
+/* Font Family */
+@font-face {
+    font-family: 'IranYekan';
+    src: url('../font/IRANYekanXFaNum-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IranYekan';
+    src: url('../font/IRANYekanXFaNum-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IranYekan';
+    src: url('../font/IRANYekanXFaNum-Bold.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IranYekan';
+    src: url('../font/IRANYekanXFaNum-Black.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IranYekan';
+    src: url('../font/IRANYekanXFaNum-ExtraBlack.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Default variables for colors */
+:root {
+    /* --bg-light: #e6f4ff;
+    --text-light: #000000;
+    --bg-dark: #000e1a;
+    --text-dark: #ffffff; */
+    --bg-color: #e6f4ff;
+    --text-color: #000000;
+    --bg-blue: #4dafff;
+    --bg-btn: #008cff;
+}
+
+* {
+    font-family: IranYekan;
+    direction: rtl;
+    margin: 0;
+    transition: all;
+    transition-property: background-color;
+    transition-property: color;
+    transition-duration: 200ms;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color); 
+}
+
+/* .dark-mode {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+} */
+
+/* Start Code */
+
+.flex {
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+
+.bg-blue{
+    background-color: var(--bg-blue);
+}
+
+.p-05{
+    padding: 0.5rem;
+}
+.p-1{
+    padding: 1rem;
+}
+.text-decor-none{
+    text-decoration: none;
+}
+.text-color{
+    color: var(--text-color);
+}
+.text-bold{
+    font-weight: 500;
+}
+.text-md{
+    font-size: medium;
+}
+.text-xl{
+    font-size: larger;
+}
+.text-2xl{
+    font-size: x-large;
+}
+
+
+.hover-scale-110{
+    scale: 100%;
+    transition: all;
+}
+.hover-scale-110:hover{
+    scale: 110%;
+    transform-origin: center;
+}
+.hover-box-shadow{
+    box-shadow:none;
+    transition: all;
+}
+.hover-box-shadow:hover{
+    box-shadow:var(--bg-color) 0rem 0rem 1rem -0.3rem;
+}
+.hover-text-shadow{
+    text-shadow:none;
+    transition: all;
+}
+.hover-text-shadow:hover{
+    text-shadow:var(--bg-color) 0rem 0rem 0.5rem ;
+}
+.duration-200{
+    transition-duration: 200ms;
+}
+
+.btn{
+    border: none;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+.btn-primary{
+    background-color: var(--bg-btn);
+}
+.rounded-05{
+    border-radius: 0.5rem;
+}
+
