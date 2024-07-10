@@ -7,36 +7,54 @@
     <title>Exchange</title>
 </head>
 <body>
-    <nav class="flex justify-between items-center p-1 bg-blue">
-        <div class="flex gap-2 items-center">
+    <nav class="flex justify-between items-center p-1">
+        <div class="hidden lg-flex">
+            <button class="btn flex p-05 rounded-05 hover-scale-110 duration-200 hover-box-shadow-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+            </button>
+        </div>
+        <div class="flex gap-2 items-center lg-hidden">
             <!-- Right side -->
-            <a href="" class="text-decor-none text-color text-bold text-2xl hover-scale-110 duration-200 hover-text-shadow">
+            <a href="" class="text-decor-none text-color text-bold text-2xl hover-scale-110 duration-200">
                 <!-- Place the LOGO here -->
                 LOGO
             </a>
-            <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200 hover-text-shadow">
+            <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
                 معامله
             </a>
-            <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200 hover-text-shadow">
+            <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
                 رمز ارز
             </a>
-            <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200 hover-text-shadow">
+            <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
                 تماس با ما
             </a>
         </div>
         <div class="flex gap-1 items-center">
             <!-- Left side -->
-            <button class="btn btn-primary p-05 rounded-05 text-bold text-md hover-scale-110 duration-200 hover-box-shadow">
+            <button class="btn btn-primary p-05 rounded-05 text-bold text-md hover-scale-110 duration-200 hover-box-shadow-lg">
                 <!-- Login/Sign up option -->
                 <p>ورود یا ثبت نام</p>
             </button>
-            <button id="darkBtn" class="btn flex p-05 rounded-05 hover-scale-110 duration-200 hover-box-shadow">
+            <button id="darkBtn" class="btn flex p-05 rounded-05 hover-scale-110 duration-200 hover-box-shadow-lg">
+                <!-- Dark/ight switcher -->
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                     <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
                   </svg>
             </button>
         </div>
     </nav>
+    <main class="flex justify-center items-center p-2 gap-5 bg-banner lg-flex-col-rev lg-gap-1">
+        <div class="flex flex-col justify-ceter items-start lg-col-flex lg-justify-center lg-items-center">
+            <h1 class="text-3xl">صرافـــی والکـــس <span class="text-2xl text-light">(فیک)</span></h1>
+            <h3 class="text-2xl text-normal">بازار خرید و فروش ارزهای دیجیتال</h3>
+            <button class="btn btn-primary px-2 py-05 mt-1 rounded-05 text-bold text-md hover-scale-110 duration-200 hover-box-shadow-xl">شروع کنید</button>
+        </div>
+        <div>
+            <img src="image/Banner.png" alt="" width="500px">
+        </div>
+    </main>
     <script src="script/script.js"></script>
 </body>
 </html>
