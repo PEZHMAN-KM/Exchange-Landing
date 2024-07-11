@@ -10,6 +10,12 @@ darkBtn = document.getElementById("darkBtn").addEventListener("click", () => {
     document.documentElement.style.setProperty("--bg-blue", "#4dafff");
     document.documentElement.style.setProperty("--bg-banner", "#33a3ff");
 
+    document.documentElement.style.setProperty("--bg-benefit", "#9fdfca");    
+    document.documentElement.style.setProperty("--text-benefit", "#267359"); 
+    document.documentElement.style.setProperty("--bg-harm", "#f7879a"); 
+    document.documentElement.style.setProperty("--text-harm", "#900920"); 
+
+
     dark_mode = true;
     document.getElementById("darkBtn").innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
   <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
@@ -20,6 +26,11 @@ darkBtn = document.getElementById("darkBtn").addEventListener("click", () => {
 
     document.documentElement.style.setProperty("--bg-banner", "#0070cc");
     document.documentElement.style.setProperty("--bg-blue", "#0062b3");
+
+    document.documentElement.style.setProperty("--bg-benefit", "#20604a");  
+    document.documentElement.style.setProperty("--text-benefit", "#8cd9bf"); 
+    document.documentElement.style.setProperty("--bg-harm", "#78081a"); 
+    document.documentElement.style.setProperty("--text-harm", "#f66f86"); 
 
     dark_mode = false;
 
@@ -44,3 +55,16 @@ window.addEventListener("resize",()=>{
     side.style.display = 'none';
   }
 });
+
+var list = document.getElementById('showMoreList');
+
+function toggleMoreList(){
+  if (list.style.display === 'none') {
+    list.style.display = 'flex';
+    document.getElementById('btnMoreList').innerText="نمایش کمتر";
+    } else {
+    list.style.display = 'none';
+    document.getElementById('btnMoreList').innerText="نمایش بیشتر";
+
+  }
+}

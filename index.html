@@ -7,7 +7,7 @@
     <title>Exchange</title>
 </head>
 <body>
-    <nav class="flex justify-between items-center p-1">
+    <nav class="flex justify-between items-center bg-main sticky p-1 z-index-3">
         <div class="hidden lg-flex">
             <!-- Humburger Menu (lg Mode) -->
             <button class="btn flex p-05 rounded-05 hover-scale-110 duration-200 hover-box-shadow-lg" onclick="toggleSideMenu()">
@@ -70,9 +70,313 @@
             <button class="btn btn-primary px-2 py-05 mt-1 rounded-05 text-bold text-md hover-scale-110 duration-200 hover-box-shadow-xl">شروع کنید</button>
         </div>
         <div>
-            <img src="image/Banner.png" alt="" width="500px">
+            <img class="w-30 lg-w-15" src="image/Banner.png" alt="">
         </div>
     </main>
+    <div>
+        <!-- Coin List -->
+        <div class="bg-blue rounded-05 m-1 p-1">
+            <h1>رمز ارز</h1>
+            <div class="flex justify-center items-center">
+                <table class="flex flex-col mt-05 justify-center items-start overflow-x-auto">
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <th class="w-8">نام</th>
+                        <th class="w-5">قیمت</th>
+                        <th class="w-5">تغییرات</th>
+                        <th class="w-10">عملیات</th>
+                    </tr>
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <!-- Tether -->
+                        <td class="w-8 flex flex-col justify-center items-start">
+                            <div class="flex justify-center items-center">
+                                <img src="image/tether.png" alt="" width="40px">
+                                <div class="flex flex-col items-start pr-05">
+                                    <p class="text-black">Tether</p>
+                                    <p>تتر</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-5 flex justify-center items-center text-2xl">$1</td>
+                        <td class="w-5 flex justify-center items-center">
+                            <div class="bg-benefit rounded-05 w-4">
+                                <p class="text-benefit">0.01%+</p>
+                            </div>
+                        </td>
+                        <td class="w-10 flex justify-center items-center">
+                            <div class="flex justify-center items-center gap-05">
+                                <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">خرید</p>
+                                </button>
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">فروش</p>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <!--  Bit Coin -->
+                        <td class="w-8 flex flex-col justify-center items-start">
+                            <div class="flex justify-center items-center">
+                                <img src="image/Bitcoin.png" alt="" width="40px">
+                                <div class="flex flex-col items-start pr-05">
+                                    <p class="text-black">BitCoin</p>
+                                    <p>بیت کوین</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-5 flex justify-center items-center text-2xl">$59,104.06</td>
+                        <td class="w-5 flex justify-center items-center">
+                            <div class="bg-benefit rounded-05 w-4">
+                                <p class="text-benefit">1.90%+</p>
+                            </div>
+                        </td>
+                        <td class="w-10 flex justify-center items-center">
+                            <div class="flex justify-center items-center gap-05">
+                                <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">خرید</p>
+                                </button>
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">فروش</p>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <!-- Ethereum -->
+                        <td class="w-8 flex flex-col justify-center items-start">
+                            <div class="flex justify-center items-center">
+                                <img src="image/ethereum.png" alt="" width="40px">
+                                <div class="flex flex-col items-start pr-05">
+                                    <p class="text-black">Ethereum</p>
+                                    <p>اتریوم</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-5 flex justify-center items-center text-2xl">$3,189.88</td>
+                        <td class="w-5 flex justify-center items-center">
+                            <div class="bg-benefit rounded-05 w-4">
+                                <p class="text-benefit">1.76%+</p>
+                            </div>
+                        </td>
+                        <td class="w-10 flex justify-center items-center">
+                            <div class="flex justify-center items-center gap-05">
+                                <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">خرید</p>
+                                </button>
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">فروش</p>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <!-- Toncoin -->
+                        <td class="w-8 flex flex-col justify-center items-start">
+                            <div class="flex justify-center items-center">
+                                <img src="image/toncoin.png" alt="" width="40px">
+                                <div class="flex flex-col items-start pr-05">
+                                    <p class="text-black">Toncoin</p>
+                                    <p>تون کوین</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-5 flex justify-center items-center text-2xl">$7.15</td>
+                        <td class="w-5 flex justify-center items-center">
+                            <div class="bg-harm rounded-05 w-4">
+                                <p class="text-harm">7.15%-</p>
+                            </div>
+                        </td>
+                        <td class="w-10 flex justify-center items-center">
+                            <div class="flex justify-center items-center gap-05">
+                                <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">خرید</p>
+                                </button>
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">فروش</p>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <!-- Tron -->
+                        <td class="w-8 flex flex-col justify-center items-start">
+                            <div class="flex justify-center items-center">
+                                <img src="image/tron.png" alt="" width="40px">
+                                <div class="flex flex-col items-start pr-05">
+                                    <p class="text-black">Tron</p>
+                                    <p>ترون</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-5 flex justify-center items-center text-2xl">$0.13</td>
+                        <td class="w-5 flex justify-center items-center">
+                            <div class="bg-benefit rounded-05 w-4">
+                                <p class="text-benefit">3.40%+</p>
+                            </div>
+                        </td>
+                        <td class="w-10 flex justify-center items-center">
+                            <div class="flex justify-center items-center gap-05">
+                                <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">خرید</p>
+                                </button>
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">فروش</p>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>                        
+                </table>
+            </div>
+            <div class="flex justify-center items-center">
+                <table class="flex-col mt-05 justify-center items-start overflow-x-auto" style="display: none;" id="showMoreList">
+                    <!-- EXPAND MENU | Sample -->
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <!-- Tether -->
+                        <td class="w-8 flex flex-col justify-center items-start">
+                            <div class="flex justify-center items-center">
+                                <img src="image/tether.png" alt="" width="40px">
+                                <div class="flex flex-col items-start pr-05">
+                                    <p class="text-black">Tether</p>
+                                    <p>تتر</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-5 flex justify-center items-center text-2xl">$1</td>
+                        <td class="w-5 flex justify-center items-center">
+                            <div class="bg-benefit rounded-05 w-4">
+                                <p class="text-benefit">0.01%+</p>
+                            </div>
+                        </td>
+                        <td class="w-10 flex justify-center items-center">
+                            <div class="flex justify-center items-center gap-05">
+                                <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">خرید</p>
+                                </button>
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">فروش</p>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <!--  Bit Coin -->
+                        <td class="w-8 flex flex-col justify-center items-start">
+                            <div class="flex justify-center items-center">
+                                <img src="image/Bitcoin.png" alt="" width="40px">
+                                <div class="flex flex-col items-start pr-05">
+                                    <p class="text-black">BitCoin</p>
+                                    <p>بیت کوین</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-5 flex justify-center items-center text-2xl">$59,104.06</td>
+                        <td class="w-5 flex justify-center items-center">
+                            <div class="bg-benefit rounded-05 w-4">
+                                <p class="text-benefit">1.90%+</p>
+                            </div>
+                        </td>
+                        <td class="w-10 flex justify-center items-center">
+                            <div class="flex justify-center items-center gap-05">
+                                <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">خرید</p>
+                                </button>
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">فروش</p>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <!-- Ethereum -->
+                        <td class="w-8 flex flex-col justify-center items-start">
+                            <div class="flex justify-center items-center">
+                                <img src="image/ethereum.png" alt="" width="40px">
+                                <div class="flex flex-col items-start pr-05">
+                                    <p class="text-black">Ethereum</p>
+                                    <p>اتریوم</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-5 flex justify-center items-center text-2xl">$3,189.88</td>
+                        <td class="w-5 flex justify-center items-center">
+                            <div class="bg-benefit rounded-05 w-4">
+                                <p class="text-benefit">1.76%+</p>
+                            </div>
+                        </td>
+                        <td class="w-10 flex justify-center items-center">
+                            <div class="flex justify-center items-center gap-05">
+                                <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">خرید</p>
+                                </button>
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">فروش</p>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <!-- Toncoin -->
+                        <td class="w-8 flex flex-col justify-center items-start">
+                            <div class="flex justify-center items-center">
+                                <img src="image/toncoin.png" alt="" width="40px">
+                                <div class="flex flex-col items-start pr-05">
+                                    <p class="text-black">Toncoin</p>
+                                    <p>تون کوین</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-5 flex justify-center items-center text-2xl">$7.15</td>
+                        <td class="w-5 flex justify-center items-center">
+                            <div class="bg-harm rounded-05 w-4">
+                                <p class="text-harm">7.15%-</p>
+                            </div>
+                        </td>
+                        <td class="w-10 flex justify-center items-center">
+                            <div class="flex justify-center items-center gap-05">
+                                <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">خرید</p>
+                                </button>
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">فروش</p>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="flex font-bold text-xl text-center gap-3 py-05 table-border">
+                        <!-- Tron -->
+                        <td class="w-8 flex flex-col justify-center items-start">
+                            <div class="flex justify-center items-center">
+                                <img src="image/tron.png" alt="" width="40px">
+                                <div class="flex flex-col items-start pr-05">
+                                    <p class="text-black">Tron</p>
+                                    <p>ترون</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="w-5 flex justify-center items-center text-2xl">$0.13</td>
+                        <td class="w-5 flex justify-center items-center">
+                            <div class="bg-benefit rounded-05 w-4">
+                                <p class="text-benefit">3.40%+</p>
+                            </div>
+                        </td>
+                        <td class="w-10 flex justify-center items-center">
+                            <div class="flex justify-center items-center gap-05">
+                                <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">خرید</p>
+                                </button>
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                    <p class="text-color">فروش</p>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="flex flex-col justify-center items-end">
+                <button class="btn btn-primary px-2 py-05 mt-1 rounded-05 text-bold text-md hover-scale-110 duration-200 hover-box-shadow-xl" id="btnMoreList" onclick="toggleMoreList()">نمایش بیشتر</button>
+            </div>
+        </div>
+    </div>
     <script src="script/script.js"></script>
 </body>
 </html>
