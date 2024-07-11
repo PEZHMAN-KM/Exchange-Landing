@@ -137,8 +137,16 @@ body {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+.m-1{
+    margin: 1rem;
+}
 .mt-1{
     margin-top: 1rem;
+}   
+
+/* Position */
+.absolute {
+    position: absolute;
 }
 
 /* Text */
@@ -209,7 +217,13 @@ body {
     border-radius: 0.5rem;
 }
 
-
+/* Width & Height */
+.w-12{
+    width: 12rem;
+}
+.h-fit{
+    height: fit-content;
+}
 
 @media only screen and (max-width: 1140px) {
     .lg-hidden{

@@ -28,3 +28,19 @@ darkBtn = document.getElementById("darkBtn").addEventListener("click", () => {
 </svg>`;
   }
 });
+
+var side = document.getElementById('sideMenu');
+
+function toggleSideMenu(){
+  if (side.style.display === 'none') {
+    side.style.display = 'flex';
+  } else {
+    side.style.display = 'none';
+  }
+}
+
+window.addEventListener("resize",()=>{
+  if(window.screen.width>=1140){
+    side.style.display = 'none';
+  }
+});
