@@ -7,7 +7,7 @@
     <title>Exchange</title>
 </head>
 <body>
-    <nav class="flex justify-between items-center bg-main sticky p-1 z-index-3">
+    <nav class="flex justify-between items-center bg-main sticky top-0 p-1 z-index-3">
         <div class="hidden lg-flex">
             <!-- Humburger Menu (lg Mode) -->
             <button class="btn flex p-05 rounded-05 hover-scale-110 duration-200 hover-box-shadow-lg" onclick="toggleSideMenu()">
@@ -46,7 +46,7 @@
             </button>
         </div>
     </nav>
-    <div class="flex-col w-12 h-fit p-2 gap-1 bg-blue rounded-05 m-1 absolute" style="display: none;" id="sideMenu">
+    <div class="flex-col w-12 h-fit p-2 gap-1 bg-blue rounded-05 m-1 fixed top-5 border-1 z-index-3" style="display: none;" id="sideMenu">
         <!-- Side Menu -->
         <a href="" class="text-decor-none text-color text-bold text-2xl hover-scale-110 duration-200">
             <!-- Place the LOGO here -->
