@@ -8,6 +8,7 @@
 </head>
 <body>
     <nav class="flex justify-between items-center bg-main sticky top-0 p-1 z-index-3">
+        <!-- Nav Bar -->
         <div class="hidden lg-flex">
             <!-- Humburger Menu (lg Mode) -->
             <button class="btn flex p-05 rounded-05 hover-scale-110 duration-200 hover-box-shadow-lg" onclick="toggleSideMenu()">
@@ -22,13 +23,13 @@
                 <!-- Place the LOGO here -->
                 LOGO
             </a>
-            <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
+            <a href="#convertBox" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
                 معامله
             </a>
-            <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
+            <a href="#coinList" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
                 رمز ارز
             </a>
-            <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
+            <a href="#footer" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
                 تماس با ما
             </a>
         </div>
@@ -52,19 +53,19 @@
             <!-- Place the LOGO here -->
             LOGO
         </a>
-        <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
+        <a href="#convertBox" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
             معامله
         </a>
-        <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
+        <a href="#coinList" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
             رمز ارز
         </a>
-        <a href="" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
+        <a href="#footer" class="text-decor-none text-color text-bold text-xl hover-scale-110 duration-200">
             تماس با ما
         </a>
     </div>
     <main class="flex justify-center items-center p-2 gap-5 bg-banner lg-flex-col-rev lg-gap-1">
         <!-- Banner Here -->
-        <div class="flex flex-col justify-ceter items-start lg-col-flex lg-justify-center lg-items-center">
+        <div class="flex flex-col justify-ceter items-start lg-flex-col lg-justify-center lg-items-center">
             <h1 class="text-3xl">صرافـــی والکـــس <span class="text-2xl text-light">(فیک)</span></h1>
             <h3 class="text-2xl text-normal">بازار خرید و فروش ارزهای دیجیتال</h3>
             <button class="btn btn-primary px-2 py-05 mt-1 rounded-05 text-bold text-md hover-scale-110 duration-200 hover-box-shadow-xl">شروع کنید</button>
@@ -73,7 +74,7 @@
             <img class="w-30 lg-w-15" src="image/Banner.png" alt="">
         </div>
     </main>
-    <div>
+    <div id="coinList">
         <!-- Coin List -->
         <div class="bg-blue rounded-05 m-1 p-1">
             <h1>رمز ارز</h1>
@@ -107,7 +108,7 @@
                                 <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
                                     <p class="text-color">خرید</p>
                                 </button>
-                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200" onclick="changeInput('tether')">
                                     <p class="text-color">فروش</p>
                                 </button>
                             </div>
@@ -135,7 +136,7 @@
                                 <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
                                     <p class="text-color">خرید</p>
                                 </button>
-                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200" onclick="changeInput('bitcoin')">
                                     <p class="text-color">فروش</p>
                                 </button>
                             </div>
@@ -163,7 +164,7 @@
                                 <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
                                     <p class="text-color">خرید</p>
                                 </button>
-                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200" onclick="changeInput('ethereum')">
                                     <p class="text-color">فروش</p>
                                 </button>
                             </div>
@@ -191,7 +192,7 @@
                                 <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
                                     <p class="text-color">خرید</p>
                                 </button>
-                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200" onclick="changeInput('toncoin')">
                                     <p class="text-color">فروش</p>
                                 </button>
                             </div>
@@ -219,7 +220,7 @@
                                 <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
                                     <p class="text-color">خرید</p>
                                 </button>
-                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200" onclick="changeInput('tron')">
                                     <p class="text-color">فروش</p>
                                 </button>
                             </div>
@@ -252,7 +253,7 @@
                                 <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
                                     <p class="text-color">خرید</p>
                                 </button>
-                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200" onclick="changeInput('tether')">
                                     <p class="text-color">فروش</p>
                                 </button>
                             </div>
@@ -280,7 +281,7 @@
                                 <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
                                     <p class="text-color">خرید</p>
                                 </button>
-                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200" onclick="changeInput('bitcoin')">
                                     <p class="text-color">فروش</p>
                                 </button>
                             </div>
@@ -308,7 +309,7 @@
                                 <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
                                     <p class="text-color">خرید</p>
                                 </button>
-                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200" onclick="changeInput('ethereum')">
                                     <p class="text-color">فروش</p>
                                 </button>
                             </div>
@@ -336,7 +337,7 @@
                                 <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
                                     <p class="text-color">خرید</p>
                                 </button>
-                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200" onclick="changeInput('toncoin')">
                                     <p class="text-color">فروش</p>
                                 </button>
                             </div>
@@ -364,7 +365,7 @@
                                 <button class="border-none bg-benefit rounded-05 w-4 py-05 hover-scale-110 duration-200">
                                     <p class="text-color">خرید</p>
                                 </button>
-                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200">
+                                <button class="border-none bg-harm rounded-05 w-4 py-05 hover-scale-110 duration-200" onclick="changeInput('tron')">
                                     <p class="text-color">فروش</p>
                                 </button>
                             </div>
@@ -377,15 +378,15 @@
             </div>
         </div>
     </div>
-    <div>
+    <div id="convertBox">
         <!-- Convert Box -->
         <div class="bg-blue rounded-05 m-1 p-1">
             <h1>معامله</h1>
-            <form class="flex flex-col justify-center items-center gap-1" action="">
+            <form class="flex flex-col justify-center items-center gap-1">
                 <div class="flex md-flex-col justify-center items-center gap-1 md-gap-0">
                     <div>
                         <label for="from">تبدیل ارز از : <br></label>
-                        <select name="from" class="w-10 bg-main text-color border-none rounded-05 py-05 mt-05" id="" >
+                        <select name="from" class="w-10 bg-main text-color border-none rounded-05 py-05 mt-05" id="coin1" >
                             <option value="tether">Tether</option>
                             <option value="bitcoin">BitCoin</option>
                             <option value="ethereum">Ethereum</option>
@@ -394,8 +395,8 @@
                     </select>
                     </div>
                     <div>
-                        <label for="from">به ارز: <br></label>
-                        <select name="from" class="w-10 bg-main text-color border-none rounded-05 py-05 mt-05" id="" >
+                        <label for="to">به ارز: <br></label>
+                        <select name="t0" class="w-10 bg-main text-color border-none rounded-05 py-05 mt-05" id="coin2" >
                             <option value="tether">Tether</option>
                             <option value="bitcoin">BitCoin</option>
                             <option value="ethereum">Ethereum</option>
@@ -404,10 +405,21 @@
                     </select>
                     </div>
                 </div>
-                <button class="btn px-2 py-05 rounded-05 text-bold text-md hover-scale-110 duration-200">تبدیل</button>
+                <button class="btn px-2 py-05 rounded-05 text-bold text-md hover-scale-110 duration-200" id="convertBtn">تبدیل</button>
             </form>
         </div>
     </div>
+    <footer id="footer">
+        <!-- Footer -->
+         <div class="flex flex-col justify-center items-center">
+            <div class="flex lg-flex-col justify-center items-center gap-2 lg-gap-05">
+                <h1><a class="text-decor-none text-color" href="">LOGO</a></h1>
+                <p class="w-30 lg-w-fit lg-px-2">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                <img src="image/namad.png" alt="" width="200px">
+            </div>
+            <p class="mt-05" id="foot">All Rights Reserved To <a class="text-decor-none text-color text-bold" href=""><i>PEZHMAN.KM</i></a></p>
+         </div>
+    </footer>
     <script src="script/script.js"></script>
 </body>
 </html>

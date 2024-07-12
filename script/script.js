@@ -68,3 +68,13 @@ function toggleMoreList(){
 
   }
 }
+
+function changeInput(value){
+  document.getElementById('coin1').value=value;
+}
+
+document.getElementById('convertBtn').addEventListener("click",(e)=>{
+  e.preventDefault();
+  
+  alert(`تبدیل ارز از ${document.getElementById('coin1').value} به ارز ${document.getElementById('coin2').value} انجام شده است`)
+});

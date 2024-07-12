@@ -338,11 +338,21 @@ body {
     .lg-items-center{
         align-items: center;
     }
+    .lg-gap-05{
+        gap: 0.5rem;
+    }
     .lg-gap-1{
         gap: 1rem;
     }
     .lg-w-15{
         width: 15rem;
+    }
+    .lg-w-fit{
+        width: fit-content;
+    }
+    .lg-px-2{
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 }
 
