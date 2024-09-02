@@ -7,8 +7,8 @@ darkBtn = document.getElementById("darkBtn").addEventListener("click", () => {
     document.documentElement.style.setProperty("--bg-color", "#e6f4ff");
     document.documentElement.style.setProperty("--text-color", "#000000");
 
-    document.documentElement.style.setProperty("--bg-blue", "#4dafff");
-    document.documentElement.style.setProperty("--bg-banner", "#33a3ff");
+    document.documentElement.style.setProperty("--bg-blue", "#cce8ff");
+    document.documentElement.style.setProperty("--bg-banner", "#80c6ff");
 
     document.documentElement.style.setProperty("--bg-benefit", "#9fdfca");    
     document.documentElement.style.setProperty("--text-benefit", "#267359"); 
@@ -24,8 +24,8 @@ darkBtn = document.getElementById("darkBtn").addEventListener("click", () => {
     document.documentElement.style.setProperty("--bg-color", "#000e1a");
     document.documentElement.style.setProperty("--text-color", "#ffffff");
 
-    document.documentElement.style.setProperty("--bg-banner", "#0070cc");
-    document.documentElement.style.setProperty("--bg-blue", "#0062b3");
+    document.documentElement.style.setProperty("--bg-banner", "#004680");
+    document.documentElement.style.setProperty("--bg-blue", "#001c33");
 
     document.documentElement.style.setProperty("--bg-benefit", "#20604a");  
     document.documentElement.style.setProperty("--text-benefit", "#8cd9bf"); 
